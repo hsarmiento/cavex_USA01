@@ -10,6 +10,14 @@ if(!empty($_SESSION['username'])){
 
 $oLogin = new BSLogin();
 $msg = $oLogin->Login();
+
+$oModel = new BSModel();
+$query_title = "SELECT * from titulo_cavex order by fecha_hora desc limit 1;";
+$aTitle = $oModel->Select($query_title);
+$title_cavex = 'Cavex';
+if(!empty($aTitle)){
+	$title_cavex = $aTitle[0]['texto'];
+}
 ?>
 
 
@@ -31,7 +39,7 @@ $msg = $oLogin->Login();
 			    <div id="title-nav"><a href="/cavex_USA01">Cavex Control System</a></div>
 			    <div id="bar-two"></div>
 			    <div id="bar-three"></div>
-			    <div id="enterprise-nav">Cavex Escondida</div>
+			    <div id="enterprise-nav"><?=$title_cavex?></div>
 			    <div id="date-nav"><?=date('F /d/Y')?></div>
 			    <div class="logo_weir"><img src="assets/img/WeirMinerals.png"></div>
 			</div>
