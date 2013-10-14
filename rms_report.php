@@ -1,6 +1,6 @@
 <?php
-require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_monitoring_system/'.'routes.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_monitoring_system/'.'header.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_USA01/'.'routes.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_USA01/'.'header.php');
 require_once($aRoutes['paths']['config'].'bs_model.php');
 require_once('inc/PHPExcel.php');
 $oLogin = new BSLogin();

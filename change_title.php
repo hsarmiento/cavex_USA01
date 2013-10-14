@@ -1,6 +1,6 @@
 <?php 
-require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_monitoring_system/'.'routes.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_monitoring_system/'.'header.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_USA01/'.'routes.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_USA01/'.'header.php');
 require_once($aRoutes['paths']['config'].'bs_model.php');
 $oLogin = new BSLogin();
 $oLogin->IsLogged("admin");
@@ -34,7 +34,7 @@ if(!empty($form['save_title'])){
 
 
 <?php 
-require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_monitoring_system/'.'footer.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_USA01/'.'footer.php');
 
 ?>
 

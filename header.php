@@ -35,7 +35,7 @@ if(!empty($aTitle)){
 		<header>
 			<div id="nav-header">
 			    <div id="bar-one"></div>
-			    <div id="title-nav"><a href="/cavex_monitoring_system/home.php">Cavex Control System</a></div>
+			    <div id="title-nav"><a href="/cavex_USA01/home.php">Cavex Control System</a></div>
 			    <div id="bar-two"></div>
 			    <div id="bar-three"></div>
 			    <div id="enterprise-nav"><?=$title_cavex?></div>
@@ -48,19 +48,19 @@ if(!empty($aTitle)){
 			<div class="menu">
 				<div class="pull-center">
 					<ul class="nav nav-pills">
-					  <li><a href="/cavex_monitoring_system/home.php">Home</a></li>
+					  <li><a href="/cavex_USA01/home.php">Home</a></li>
 					  <?php if($_SESSION['usertype'] == 1){?>
-						<li><a href="/cavex_monitoring_system/system_calibration.php">System calibration</a></li>
+						<li><a href="/cavex_USA01/system_calibration.php">System calibration</a></li>
 					  	<li class="dropdown">
 						  	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Radios<b class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="/cavex_monitoring_system/add_radio.php">Add radio</a></li>
-								<li><a href="/cavex_monitoring_system/radios.php">View radios</a></li>
+								<li><a href="/cavex_USA01/add_radio.php">Add radio</a></li>
+								<li><a href="/cavex_USA01/radios.php">View radios</a></li>
 						  	</ul> 
 					  </li>
 					  <?php } ?>				  
-					  <li><a href="/cavex_monitoring_system/overview.php">Overview</a></li>
-					  <li><a href="/cavex_monitoring_system/alarms_events.php">Alarms & events</a></li>
+					  <li><a href="/cavex_USA01/overview.php">Overview</a></li>
+					  <li><a href="/cavex_USA01/alarms_events.php">Alarms & events</a></li>
 					  <?php if($_SESSION['usertype'] == 1){?>
 						  <li class="dropdown">
 						  	<a class="dropdown-toggle" data-toggle="dropdown" href="#">User accounts <b class="caret"></b></a>
@@ -77,13 +77,13 @@ if(!empty($aTitle)){
 						  </li>
 					  <?php } ?>
 					  <?php if($_SESSION['usertype'] == 1){?>
-					  	<li><a href="/cavex_monitoring_system/change_title.php">Change title</a></li>
+					  	<li><a href="/cavex_USA01/change_title.php">Change title</a></li>
 					  <?php } ?>
 					  <li class="dropdown">
 					  	<a class="dropdown-toggle" data-toggle="dropdown" href="#"><?=$_SESSION['username']?><b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="change_password.php?user_id=<?=$_SESSION['user_id']?>">Change Password</a></li>
-							<li><a href="/cavex_monitoring_system/logout.php">Logout</a></li>
+							<li><a href="/cavex_USA01/logout.php">Logout</a></li>
 					  	</ul> 
 					  </li>
 					</ul>

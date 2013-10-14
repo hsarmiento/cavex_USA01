@@ -1,6 +1,6 @@
 <?php 
-require_once('/var/www/cavex_monitoring_system/config/bs_model.php');
-require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_monitoring_system/'.'routes.php');
+require_once('/var/www/cavex_USA01/config/bs_model.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/cavex_USA01/'.'routes.php');
 // require_once($aRoutes['paths']['config'].'bs_model.php');
 
 $user_id = $_SESSION['user_id'];
